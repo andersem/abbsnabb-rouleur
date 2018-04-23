@@ -4,7 +4,7 @@ import './css/index.css';
 import reducers from './reducers/index';
 import {applyMiddleware, compose, createStore} from 'redux';
 import {Provider} from 'react-redux';
-import {HashRouter as Router, Redirect, Route} from 'react-router-dom';
+import {HashRouter as Router, Route} from 'react-router-dom';
 import TotalLeaderboard from "./components/TotalLeaderboard";
 import createSagaMiddleware from 'redux-saga';
 import sagas from './sagas';
