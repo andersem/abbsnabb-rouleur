@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
-import * as participants from './totalLeaderboard';
+import * as totalLeaderboard from './totalLeaderboard';
+import * as segmentLeaderboard from './segmentLeaderboard';
 
 const appReducer = combineReducers({
-    ...participants
+    ...totalLeaderboard,
+    ...segmentLeaderboard
 });
 
 const rootReducer = (state, action) => {
