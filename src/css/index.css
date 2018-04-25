@@ -3,3 +3,19 @@
     text-align: center;
     margin: 0 auto;
 }
+
+.segment-select-menu-item {
+    width: 500px;
+}
+
+@media (max-width: 800px) {
+
+    .segment-select {
+        width: 100%;
+    }
+
+    .segment-select-menu-item {
+        width: 100%;
+    }
+
+}

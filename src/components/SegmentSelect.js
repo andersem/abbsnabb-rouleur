@@ -25,9 +25,9 @@ const SegmentSelect = ({history, currentSegment}) => {
                     }
                 }}
                 anchorCorner="bottomStart"
-                handle={<Button style={{width: '500px'}} raised>{displayName(currentSegment)}</Button>}
+                handle={<Button className="segment-select-menu-item" raised>{displayName(currentSegment)}</Button>}
             >
-                <MenuItem style={{width: '500px'}} id="overall">Overall</MenuItem>
+                <MenuItem className="segment-select-menu-item" id="overall">Overall</MenuItem>
                 {segments.map(segment => {
                     return <MenuItem id={segment.id} key={segment.id}>{segment.name}</MenuItem>
                 })}
