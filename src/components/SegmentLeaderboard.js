@@ -52,7 +52,7 @@ class SegmentLeaderboard extends Component {
                             <td>{athlete.athlete_name}</td>
                             <td>{athlete.points}</td>
                             <td>{secondsToHms(athlete.elapsed_time)}</td>
-                            <td>{moment(athlete.start_date).calendar()}</td>
+                            <td>{moment(athlete.start_date).format('DD.MM.YY')}</td>
                         </tr>)
                     })}
                     </tbody>
