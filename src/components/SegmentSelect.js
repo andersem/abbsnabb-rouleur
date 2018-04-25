@@ -29,7 +29,7 @@ const SegmentSelect = ({history, currentSegment}) => {
             >
                 <MenuItem className="segment-select-menu-item" id="overall">Overall</MenuItem>
                 {segments.map(segment => {
-                    return <MenuItem id={segment.id} key={segment.id}>{segment.name}</MenuItem>
+                    return <MenuItem className="segment-select-menu-item" id={segment.id} key={segment.id}>{segment.name}</MenuItem>
                 })}
             </SimpleMenu>
         </div>

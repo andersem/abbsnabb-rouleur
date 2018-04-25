@@ -8,6 +8,10 @@
     width: 500px;
 }
 
+.segment-select .mdc-menu .mdc-list-item {
+    text-transform: uppercase;
+}
+
 @media (max-width: 800px) {
 
     .segment-select {
