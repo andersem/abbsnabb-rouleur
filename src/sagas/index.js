@@ -1,9 +1,9 @@
-import { call, put, all } from 'redux-saga/effects'
+import {call, put, all} from 'redux-saga/effects'
 import * as totalLeaderboardActions from '../actions/totalLeaderboardActions';
 import * as segmentLeaderboardActions from '../actions/segmentLeaderboardActions';
 import {takeLatest} from "redux-saga/effects";
 
-async function fetchAsync (url) {
+async function fetchAsync(url) {
     let response = await fetch(url);
     let data = await response.json();
     return data;

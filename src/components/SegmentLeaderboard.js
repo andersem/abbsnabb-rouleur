@@ -3,18 +3,8 @@ import moment from 'moment';
 import {connect} from "react-redux";
 import '../css/table.css';
 import * as segmentLeaderboardActions from '../actions/segmentLeaderboardActions';
-
-function secondsToHms(d) {
-    d = Number(d);
-    const h = Math.floor(d / 3600);
-    const m = Math.floor(d % 3600 / 60);
-    const s = Math.floor(d % 3600 % 60);
-
-    const hDisplay = h > 0 ? h + ":" : "";
-    const mDisplay = m > 0 ? m + ":" : "";
-    const sDisplay = s > 0 ? s + "" : "";
-    return hDisplay + mDisplay.padStart(3, "0") + sDisplay.padStart(2, "0");
-}
+import {secondsToHms} from '../utils/timeFormat';
+import {Button} from 'rmwc/Button';
 
 class SegmentLeaderboard extends Component {
     componentDidMount() {
@@ -33,8 +23,14 @@ class SegmentLeaderboard extends Component {
 
     render() {
         const {segmentLeaderboard} = this.props;
+        const segmentUrl = 'https://www.strava.com/segments/' + segmentLeaderboard.segment_id;
         return (
             <div>
+                <div className="overtable">
+                    <a href={segmentUrl} style={{textDecoration: 'none'}} target="blank">
+                        <Button raised theme="secondary-bg text-primary-on-secondary">Strava</Button>
+                    </a>
+                </div>
                 <table className="container">
                     <thead>
                     <tr>

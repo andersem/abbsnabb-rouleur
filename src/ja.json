@@ -1,0 +1,606 @@
+[
+    {
+        "athlete_name": "Johan H.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "12098216",
+                "points": 100
+            },
+            {
+                "segment_id": "1387885",
+                "points": 99
+            },
+            {
+                "segment_id": "1942901",
+                "points": 87
+            },
+            {
+                "segment_id": "4252879",
+                "points": 92
+            },
+            {
+                "segment_id": "5311719",
+                "points": 94
+            },
+            {
+                "segment_id": "632847",
+                "points": 96
+            },
+            {
+                "segment_id": "660072",
+                "points": 95
+            },
+            {
+                "segment_id": "665413",
+                "points": 96
+            }
+        ],
+        "points": 759
+    },
+    {
+        "athlete_name": "Mads L.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 95
+            },
+            {
+                "segment_id": "4252879",
+                "points": 100
+            },
+            {
+                "segment_id": "5311719",
+                "points": 100
+            },
+            {
+                "segment_id": "665413",
+                "points": 100
+            },
+            {
+                "segment_id": "734891",
+                "points": 100
+            }
+        ],
+        "points": 495
+    },
+    {
+        "athlete_name": "Mathias S.",
+        "athlete_id": 1675948,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 100
+            },
+            {
+                "segment_id": "4252879",
+                "points": 99
+            },
+            {
+                "segment_id": "5311719",
+                "points": 98
+            },
+            {
+                "segment_id": "632847",
+                "points": 98
+            },
+            {
+                "segment_id": "665413",
+                "points": 97
+            }
+        ],
+        "points": 492
+    },
+    {
+        "athlete_name": "Anders Emil S.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 96
+            },
+            {
+                "segment_id": "5311719",
+                "points": 97
+            },
+            {
+                "segment_id": "632847",
+                "points": 92
+            },
+            {
+                "segment_id": "660072",
+                "points": 100
+            },
+            {
+                "segment_id": "7121442",
+                "points": 96
+            }
+        ],
+        "points": 481
+    },
+    {
+        "athlete_name": "Jostein M.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 91
+            },
+            {
+                "segment_id": "4252879",
+                "points": 94
+            },
+            {
+                "segment_id": "632847",
+                "points": 93
+            },
+            {
+                "segment_id": "665413",
+                "points": 100
+            },
+            {
+                "segment_id": "7121442",
+                "points": 98
+            }
+        ],
+        "points": 476
+    },
+    {
+        "athlete_name": "Pål L.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 89
+            },
+            {
+                "segment_id": "4252879",
+                "points": 95
+            },
+            {
+                "segment_id": "5311719",
+                "points": 84
+            },
+            {
+                "segment_id": "660072",
+                "points": 99
+            },
+            {
+                "segment_id": "665413",
+                "points": 95
+            }
+        ],
+        "points": 462
+    },
+    {
+        "athlete_name": "Terje V.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 81
+            },
+            {
+                "segment_id": "4252879",
+                "points": 92
+            },
+            {
+                "segment_id": "5311719",
+                "points": 91
+            },
+            {
+                "segment_id": "632847",
+                "points": 91
+            },
+            {
+                "segment_id": "660072",
+                "points": 92
+            }
+        ],
+        "points": 447
+    },
+    {
+        "athlete_name": "Stian T.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 94
+            },
+            {
+                "segment_id": "5311719",
+                "points": 92
+            },
+            {
+                "segment_id": "632847",
+                "points": 99
+            },
+            {
+                "segment_id": "660072",
+                "points": 98
+            }
+        ],
+        "points": 383
+    },
+    {
+        "athlete_name": "Ulf Gunnar M.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 92
+            },
+            {
+                "segment_id": "4252879",
+                "points": 97
+            },
+            {
+                "segment_id": "5311719",
+                "points": 95
+            },
+            {
+                "segment_id": "734891",
+                "points": 99
+            }
+        ],
+        "points": 383
+    },
+    {
+        "athlete_name": "Thomas R.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1387885",
+                "points": 100
+            },
+            {
+                "segment_id": "1942901",
+                "points": 93
+            },
+            {
+                "segment_id": "4252879",
+                "points": 97
+            },
+            {
+                "segment_id": "5311719",
+                "points": 86
+            }
+        ],
+        "points": 376
+    },
+    {
+        "athlete_name": "Christian H.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 83
+            },
+            {
+                "segment_id": "5311719",
+                "points": 83
+            },
+            {
+                "segment_id": "660072",
+                "points": 97
+            },
+            {
+                "segment_id": "7121442",
+                "points": 99
+            }
+        ],
+        "points": 362
+    },
+    {
+        "athlete_name": "Rolf Arne H.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 84
+            },
+            {
+                "segment_id": "4252879",
+                "points": 89
+            },
+            {
+                "segment_id": "5311719",
+                "points": 93
+            },
+            {
+                "segment_id": "632847",
+                "points": 95
+            }
+        ],
+        "points": 361
+    },
+    {
+        "athlete_name": "Roy B.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1387885",
+                "points": 98
+            },
+            {
+                "segment_id": "1942901",
+                "points": 86
+            },
+            {
+                "segment_id": "4252879",
+                "points": 88
+            },
+            {
+                "segment_id": "5311719",
+                "points": 85
+            }
+        ],
+        "points": 357
+    },
+    {
+        "athlete_name": "Kjetil F.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 99
+            },
+            {
+                "segment_id": "4252879",
+                "points": 98
+            },
+            {
+                "segment_id": "5311719",
+                "points": 99
+            }
+        ],
+        "points": 296
+    },
+    {
+        "athlete_name": "Torgeir S.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 79
+            },
+            {
+                "segment_id": "4252879",
+                "points": 86
+            },
+            {
+                "segment_id": "5311719",
+                "points": 88
+            }
+        ],
+        "points": 253
+    },
+    {
+        "athlete_name": "Martin M.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "632847",
+                "points": 100
+            },
+            {
+                "segment_id": "665413",
+                "points": 98
+            }
+        ],
+        "points": 198
+    },
+    {
+        "athlete_name": "Martin Leer S.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 98
+            },
+            {
+                "segment_id": "632847",
+                "points": 95
+            }
+        ],
+        "points": 193
+    },
+    {
+        "athlete_name": "Thomas B. N.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "5311719",
+                "points": 96
+            },
+            {
+                "segment_id": "660072",
+                "points": 94
+            }
+        ],
+        "points": 190
+    },
+    {
+        "athlete_name": "Arve R.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "4252879",
+                "points": 93
+            },
+            {
+                "segment_id": "7121442",
+                "points": 97
+            }
+        ],
+        "points": 190
+    },
+    {
+        "athlete_name": "Espen D. H. O.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1387885",
+                "points": 97
+            },
+            {
+                "segment_id": "5311719",
+                "points": 90
+            }
+        ],
+        "points": 187
+    },
+    {
+        "athlete_name": "Thomas E.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 86
+            },
+            {
+                "segment_id": "632847",
+                "points": 97
+            }
+        ],
+        "points": 183
+    },
+    {
+        "athlete_name": "Kenneth Z.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "632847",
+                "points": 90
+            },
+            {
+                "segment_id": "660072",
+                "points": 93
+            }
+        ],
+        "points": 183
+    },
+    {
+        "athlete_name": "Kristian Hoff P.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 88
+            },
+            {
+                "segment_id": "4252879",
+                "points": 90
+            }
+        ],
+        "points": 178
+    },
+    {
+        "athlete_name": "Nikolas J.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 80
+            },
+            {
+                "segment_id": "660072",
+                "points": 96
+            }
+        ],
+        "points": 176
+    },
+    {
+        "athlete_name": "Petter T.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 82
+            },
+            {
+                "segment_id": "5311719",
+                "points": 87
+            }
+        ],
+        "points": 169
+    },
+    {
+        "athlete_name": "Espen S.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "7121442",
+                "points": 100
+            }
+        ],
+        "points": 100
+    },
+    {
+        "athlete_name": "Erik N.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 97
+            }
+        ],
+        "points": 97
+    },
+    {
+        "athlete_name": "Mikael B.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "1942901",
+                "points": 90
+            }
+        ],
+        "points": 90
+    },
+    {
+        "athlete_name": "Alexander O.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "5311719",
+                "points": 89
+            }
+        ],
+        "points": 89
+    },
+    {
+        "athlete_name": "Thomas S.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "4252879",
+                "points": 87
+            }
+        ],
+        "points": 87
+    },
+    {
+        "athlete_name": "Andreas U.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "5311719",
+                "points": 83
+            }
+        ],
+        "points": 83
+    },
+    {
+        "athlete_name": "Christian L.",
+        "athlete_id": -1,
+        "segments": [
+            {
+                "segment_id": "5311719",
+                "points": 81
+            }
+        ],
+        "points": 81
+    }
+]

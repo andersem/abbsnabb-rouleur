@@ -11,6 +11,7 @@ import sagas from './sagas';
 import TotalLeaderboard from "./components/TotalLeaderboard";
 import SegmentLeaderboard from "./components/SegmentLeaderboard";
 import SegmentSelect from "./components/SegmentSelect";
+import Modal from 'react-modal';
 import moment from 'moment';
 import 'moment/locale/nb';
 
@@ -27,6 +28,7 @@ const store = createStore(
 );
 sagaMiddleware.run(sagas);
 
+Modal.setAppElement('#root');
 ReactDOM.render(
     <Provider store={store}>
         <Router>

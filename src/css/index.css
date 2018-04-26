@@ -1,3 +1,10 @@
+.overtable {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+
 .segment-select {
     width: 600px;
     text-align: center;
@@ -13,7 +20,8 @@
 }
 
 @media (max-width: 800px) {
-    .segment-select {
+    .segment-select,
+    .overtable {
         width: 100%;
     }
 
