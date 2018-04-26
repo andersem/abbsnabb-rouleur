@@ -23,7 +23,7 @@ class TotalLeaderboardAthlete extends Component {
         return (
             <tr>
                 <td>{ranking}</td>
-                <td onClick={this.openModal}>{athlete.athlete_name}</td>
+                <td className="pointy" onClick={this.openModal}>{athlete.athlete_name}</td>
                 <td>{athlete.segments.length}</td>
                 <td>{athlete.points}</td>
                 <AthletDetailsModal
