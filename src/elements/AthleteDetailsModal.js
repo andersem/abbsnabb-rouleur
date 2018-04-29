@@ -1,11 +1,22 @@
 import React from 'react';
 import Modal from 'react-modal';
-import {segmentName} from "../segments";
-import {secondsToHms} from '../utils/timeFormat';
+import { segmentName } from "../segments";
+import { secondsToHms } from '../utils/timeFormat';
 import moment from 'moment';
 import '../css/modal.css';
+import {withRouter} from 'react-router';
 
-const AthleteDetailsModal = ({ modalOpen, closeModal, athlete }) => {
+const AthleteDetailsModal = ({ modalOpen, closeModal, athlete, history, location }) => {
+    const goToSegment = (segmentId) => {
+        const currentPathName = location.pathname;
+        const url = '/segment/' + segmentId;
+        if (currentPathName !== url) {
+            history.push(url);
+        } else {
+            closeModal();
+        }
+    }
+
     return (
         <Modal
             isOpen={modalOpen}
@@ -30,7 +41,7 @@ const AthleteDetailsModal = ({ modalOpen, closeModal, athlete }) => {
                     {athlete.segments.sort((a, b) => a.points < b.points).map((segment) => {
                         return (
                             <tr key={segment.segment_id}>
-                                <td>{segmentName(segment.segment_id)}</td>
+                                <td className="pointy" onClick={goToSegment.bind(null, segment.segment_id)}>{segmentName(segment.segment_id)}</td>
                                 <td>{segment.points}</td>
                                 <td>{secondsToHms(segment.elapsed_time)}</td>
                                 <td>{moment(segment.start_date).format('DD.MM.YY')}</td>
@@ -42,4 +53,4 @@ const AthleteDetailsModal = ({ modalOpen, closeModal, athlete }) => {
     );
 }
 
-export default AthleteDetailsModal;
+export default withRouter(AthleteDetailsModal);
