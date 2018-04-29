@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import AthleteDetailsModal from './AthleteDetailsModal';
+import moment from 'moment';
+import {secondsToHms} from '../utils/timeFormat';
 
-class TotalLeaderboardAthlete extends Component {
+class SegmentLeaderboardAthlete extends Component {
     constructor(props) {
         super(props);
 
@@ -19,21 +21,22 @@ class TotalLeaderboardAthlete extends Component {
     }
 
     render() {
-        const { ranking, athlete } = this.props;
+        const { ranking, athlete, athleteWithAllSegments } = this.props;
         return (
             <tr>
                 <td>{ranking}</td>
                 <td className="pointy" onClick={this.openModal}>{athlete.athlete_name}</td>
-                <td>{athlete.segments.length}</td>
                 <td>{athlete.points}</td>
+                <td>{secondsToHms(athlete.elapsed_time)}</td>
+                <td>{moment(athlete.start_date).format('DD.MM.YY')}</td>
                 <AthleteDetailsModal
                     modalOpen={this.state.modalOpen}
-                    athlete={athlete}
+                    athlete={athleteWithAllSegments}
                     closeModal={this.closeModal}
                 />
-            </tr >
+            </tr>
         )
     }
 };
 
-export default TotalLeaderboardAthlete;
+export default SegmentLeaderboardAthlete;

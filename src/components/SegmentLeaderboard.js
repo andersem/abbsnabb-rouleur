@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-import moment from 'moment';
 import {connect} from "react-redux";
 import '../css/table.css';
 import * as segmentLeaderboardActions from '../actions/segmentLeaderboardActions';
-import {secondsToHms} from '../utils/timeFormat';
 import {Button} from 'rmwc/Button';
+import SegmentLeaderboardAthlete from '../elements/SegmentLeaderboardAthlete';
+
 
 class SegmentLeaderboard extends Component {
     componentDidMount() {
@@ -22,7 +22,7 @@ class SegmentLeaderboard extends Component {
     }
 
     render() {
-        const {segmentLeaderboard} = this.props;
+        const {segmentLeaderboard, totalLeaderboard} = this.props;
         const segmentUrl = 'https://www.strava.com/segments/' + segmentLeaderboard.segment_id;
         return (
             <div>
@@ -43,13 +43,13 @@ class SegmentLeaderboard extends Component {
                     </thead>
                     <tbody>
                     {segmentLeaderboard.entries.map((athlete, i) => {
-                        return (<tr key={athlete.athlete_name}>
-                            <td>{i + 1}</td>
-                            <td>{athlete.athlete_name}</td>
-                            <td>{athlete.points}</td>
-                            <td>{secondsToHms(athlete.elapsed_time)}</td>
-                            <td>{moment(athlete.start_date).format('DD.MM.YY')}</td>
-                        </tr>)
+                        const athleteWithAllSegments = totalLeaderboard.entries.find(a => a.athlete_name === athlete.athlete_name);
+                        return <SegmentLeaderboardAthlete 
+                            key={athlete.athlete_name} 
+                            ranking={i+1} 
+                            athlete={athlete} 
+                            athleteWithAllSegments={athleteWithAllSegments} 
+                        />;
                     })}
                     </tbody>
                 </table>
@@ -59,7 +59,8 @@ class SegmentLeaderboard extends Component {
 };
 
 const mapStateToProps = state => ({
-    segmentLeaderboard: state.segmentLeaderboard
+    segmentLeaderboard: state.segmentLeaderboard,
+    totalLeaderboard: state.totalLeaderboard
 });
 
 const mapDispatchToProps = dispatch => ({
