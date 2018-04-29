@@ -15,6 +15,7 @@ import SegmentSelect from "./components/SegmentSelect";
 import Modal from 'react-modal';
 import moment from 'moment';
 import 'moment/locale/nb';
+import registerServiceWorker from './registerServiceWorker';
 
 moment.locale('nb');
 
@@ -48,4 +49,6 @@ ReactDOM.render(
                 </Switch>
             </div>
         </Router>
-    </Provider>, document.getElementById('root'));  
+    </Provider>, document.getElementById('root'));
+
+registerServiceWorker();    
