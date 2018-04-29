@@ -1,4 +1,5 @@
 import * as segmentLeaderboardActions from '../actions/segmentLeaderboardActions';
+import moment from 'moment';
 
 let defaultSegmentLeaderboard = {entries: []};
 
@@ -9,7 +10,7 @@ export function segmentLeaderboard(state = defaultSegmentLeaderboard, action) {
         case segmentLeaderboardActions.CLEAR_SEGMENT_LEADERBOARD:
             return defaultSegmentLeaderboard;
         case segmentLeaderboardActions.UPDATE_SEGMENT_LEADERBOARD:
-            return action.leaderboard;
+            return {lastUpdated: moment().toISOString(), ...action.leaderboard};
         default:
             return state;
     }
