@@ -1,28 +1,18 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import '../css/table.css';
-import * as segmentLeaderboardActions from '../actions/segmentLeaderboardActions';
 import {Button} from 'rmwc/Button';
 import SegmentLeaderboardAthlete from '../elements/SegmentLeaderboardAthlete';
 
 
 class SegmentLeaderboard extends Component {
-    componentDidMount() {
-        this.props.actions.fetchSegmentLeaderboard(this.props.match.params.segmentId);
-    }
-
-    componentDidUpdate(prevProps) {
-        if (this.props.match.params.segmentId !== prevProps.match.params.segmentId) {
-            this.props.actions.fetchSegmentLeaderboard(this.props.match.params.segmentId);
-        }
-    }
-
-    componentWillUnmount() {
-        this.props.actions.clearSegmentLeaderboard();
-    }
-
     render() {
-        const {segmentLeaderboard, totalLeaderboard} = this.props;
+        const {totalLeaderboard, match} = this.props;
+        const segmentId = match.params.segmentId;
+        const segmentLeaderboard = totalLeaderboard.segmentLeaderboards[segmentId];
+        if (!segmentLeaderboard) {
+            return <div></div>;
+        }
         const segmentUrl = 'https://www.strava.com/segments/' + segmentLeaderboard.segment_id;
         return (
             <div>
@@ -59,15 +49,7 @@ class SegmentLeaderboard extends Component {
 };
 
 const mapStateToProps = state => ({
-    segmentLeaderboard: state.segmentLeaderboard,
     totalLeaderboard: state.totalLeaderboard
 });
 
-const mapDispatchToProps = dispatch => ({
-    actions: {
-        fetchSegmentLeaderboard: (segmentId) => dispatch(segmentLeaderboardActions.fetchSegmentLeaderboard(segmentId)),
-        clearSegmentLeaderboard: () => dispatch(segmentLeaderboardActions.clearSegmentLeaderboard())
-    }
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(SegmentLeaderboard);
+export default connect(mapStateToProps)(SegmentLeaderboard);

@@ -3,22 +3,10 @@ import { connect } from "react-redux";
 import * as participantsActions from "../actions/totalLeaderboardActions";
 import '../css/table.css';
 import TotalLeaderboardAthlete from '../elements/TotalLeaderboardAthlete';
-import moment from 'moment';
 
 const TotalLeaderboard = ({ actions, totalLeaderboard }) => {
-    const lastUpdated = totalLeaderboard.lastUpdated ? moment(totalLeaderboard.lastUpdated).fromNow() : 'Aldri';
-    const error = totalLeaderboard.error ? 'Kunne ikke oppdatere' : '';
     return (
         <div>
-            <div className="overtable">
-                <span style={{ float: 'right' }}>
-                    Sist oppdatert: {lastUpdated}
-                    {totalLeaderboard.loading && <i className="fas fa-spinner fa-pulse"></i>} 
-                    {error && 
-                        <i style={{color: 'orange'}} title="Kunne ikke oppdatere listen, prøv å refreshe siden om et par minutter" className="fal fa-exclamation-triangle"></i>
-                    }
-                </span>
-            </div>
             <table className="container">
                 <thead>
                     <tr>
